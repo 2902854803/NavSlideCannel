@@ -1,0 +1,51 @@
+@onehundred: 100%;
+.holeFull {
+  width: 100%;
+  height: 100%;
+}
+
+#top {
+  .holeFull();
+  position: fixed;
+  opacity: 0.999;
+}
+
+.first {
+  color: rgb(255, 21, 76);
+}
+
+#clickbar {
+  height: 45px;
+  border-bottom: 0.5px solid rgba(199, 199, 199, 0.75);
+
+  .swiper-slide {
+    position: relative;
+    padding: 0 10px;
+    box-sizing: border-box;
+
+    .cannel {
+      height: @onehundred;
+      line-height: 45px;
+      transition: color 0.4s ease;
+    }
+  }
+
+  .bar {
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+
+    .color {
+      margin: 0 auto;
+      height: 2px;
+      background: #ff1e4c;
+    }
+  }
+}
+#bodyPages {
+  .swiper-slide {
+    overflow: scroll;
+  }
+}
+
+
