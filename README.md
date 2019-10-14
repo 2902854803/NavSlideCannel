@@ -11,7 +11,7 @@
 ```javascript
 npm install Swiper --save -D
 ```
->   先下载base目录文件，载入到项目中，其中的目录名称和文件名称可根据个人习惯自定义重命名，如果没有安装less须将base目录下slide.less文件先转成css文件
+>   先下载base目录文件，载入到项目的src根路径下，其中的目录名称和文件名称可根据个人习惯自定义重命名，如果没有安装less须将base目录下slide.less文件先转成css文件
 
 ##### 导入
 
