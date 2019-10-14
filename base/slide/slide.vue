@@ -25,6 +25,8 @@
     import {MySlider} from '@/base/js/slide'
     import SlideTouch from '@/base/js/slidetouch'
     import '@/base/css/slide.less'
+    import '@/base/css/style.css'
+    import '@/base/css/swiper.min.css'
 
     export default {
         data() {
