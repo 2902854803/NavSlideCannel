@@ -9,9 +9,9 @@
 ##### 下载依赖项
 
 ```javascript
-npm install Swiper --save -D
+npm install swiper --save -D
 ```
->   先下载base目录文件，载入到项目的src根路径下，其中的目录名称和文件名称可根据个人习惯自定义重命名，如果没有安装less须将base目录下slide.less文件先转成css文件
+>   先下载base目录文件，载入到项目的src根路径下，其中的目录名称和文件名称可根据个人习惯自定义重命名。如果没有安装 less 须将 base目录中css文件夹下的 slide.less 文件先转成css文件！
 
 ##### 导入
 
@@ -34,7 +34,7 @@ import slide from '@/base/slide/slide'
 |ordinaryCannelColor|频道字体的默认颜色|String|rgba(51,51,51,1)|否|
 |highLightCannelCol|活动频道字体的高亮颜色|String|rgb(255,40,78)|否|
 |BarWidth|颜色滑动条的长度|Number|36|否|
-|PaddingBottom|position:fixed底部固定栏导致slide不能显示全部|Number|0|否|
+|PaddingBottom|以防position:fixed底部固定栏会导致slide不能显示全部|Number|0|否|
 ***
 ##### 方法
 ***
@@ -68,21 +68,21 @@ import slide from '@/base/slide/slide'
  
  如：
  
- <div class="slide1" slot="'each_1" >
+ <div class="slide1" slot="each_1" >
         slide1
  </div>
  
- <div class="slide2" slot="'each_2" >
+ <div class="slide2" slot="each_2" >
          slide2
   </div>
  .........
- <div class="slide8" slot="'each_8" >
+ <div class="slide8" slot="each_8" >
          slide8
   </div>
   
   这种情况需要为每个slide加上对应的slot属性，
   每个slide必需加上slot属性，根据slide的索引得到最终slot属性值
-  例如第  3  个slide频道 需要加上 slot="'each_3"
+  例如第  3  个slide频道 需要加上 slot="each_3"
   
   
  -->
@@ -97,6 +97,7 @@ import slide from '@/base/slide/slide'
        },
  methods:{
      Change(index){
+         console.log(index)
          // index 为切换频道之后触发的Change函数，返回的是当前活动slide频道的索引，可在watch中监听其值的变化，来加载对应slide频道的数据
        }
     }
