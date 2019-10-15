@@ -97,8 +97,8 @@ import slide from '@/base/slide/slide'
        },
  methods:{
      Change(index){
-         console.log(index)
          // index 为切换频道之后触发的Change函数，返回的是当前活动slide频道的索引，可在watch中监听其值的变化，来加载对应slide频道的数据
+          console.log(index)
        }
     }
 ```
